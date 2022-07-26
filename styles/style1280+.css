@@ -1,0 +1,9 @@
+@media (min-width: 1281px) {
+    .wrapper .left-content .candidate-image img {
+        max-width: 253px;
+        /*height: 50%;*/
+        border-radius: 20px;
+        border: 10px solid white;
+    }
+
+}

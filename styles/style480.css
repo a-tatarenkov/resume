@@ -1,0 +1,11 @@
+@media (max-width: 480px) {
+    .wrapper {
+        flex-direction: column;
+    }
+    .wrapper .left-content {
+        width: 100%;
+    }
+    .wrapper .right-content {
+        width: 100%;
+    }
+}

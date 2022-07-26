@@ -1,0 +1,322 @@
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    border-radius: 15px;
+}
+@font-face {
+    font-family: Montserrat-Thin;
+    src: url("/content/1 CV/шрифт Montserrat/Montserrat-Thin.ttf");
+}
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url("/content/1 CV/шрифт Montserrat/Montserrat-Bold.ttf");
+}
+@font-face {
+    font-family: Montserrat;
+    src: url("/content/1 CV/шрифт Montserrat/Montserrat-Regular.ttf");
+}
+
+* h1, p, a {
+    font-family: Montserrat;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    /*padding: 0;*/
+
+}
+
+.wrapper .left-content {
+    width: 40%;
+    /*flex: 1;*/
+    background: url("../content/1 CV/бол фон.png") no-repeat center/100% 100%;
+}
+
+.wrapper .right-content {
+    width: 70%;
+    /*flex: 3;*/
+    background: url("../content/1 CV/фон.png") no-repeat center/100% 100%;
+}
+
+.wrapper .left-content .candidate-image {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*position: relative;*/
+    box-sizing: border-box;
+}
+
+
+.wrapper .left-content .candidate-image img {
+    width: 50%;
+    border-radius: 20px;
+    border: 10px solid white;
+}
+
+
+.wrapper .left-content .candidate-contacts {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0 0 25%;
+    box-sizing: border-box;
+}
+
+.wrapper .left-content .candidate-contacts .candidate-contacts-item {
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper .left-content .candidate-contacts h1 {
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    font-size: 25px;
+    color: white;
+    padding-bottom: 15px;
+}
+
+.wrapper .left-content .candidate-contacts  .candidate-contacts-item img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.wrapper .left-content .candidate-degree {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 0 25%;
+    box-sizing: border-box;
+
+}
+.wrapper .left-content .candidate-degree h1{
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+.wrapper .left-content .candidate-degree-item {
+    padding-top: 30px;
+}
+.wrapper .left-content .candidate-degree-item h1 {
+    letter-spacing: 2px;
+    font-weight: bold;
+    padding-right: 40px;
+    font-size: 16px;
+}
+.wrapper .left-content .candidate-degree-item p{
+    color: white;
+    font-size: 14px;
+    text-transform: none;
+    margin: 2px;
+    font-family: Montserrat-Thin;
+    padding-right: 40px;
+
+}
+.wrapper .left-content .candidate-skills {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 30px 0 25%;
+    box-sizing: border-box;
+    justify-content: space-around;
+}
+
+.wrapper .left-content .candidate-skills h1 {
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+
+}
+.wrapper .left-content .candidate-skills .candidate-skills-item {
+    font-family: Montserrat;
+    color: white;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.wrapper .left-content .candidate-skills .candidate-skills-item input{
+    width: 100px;
+    height: 10px;
+}
+.wrapper .left-content .candidate-skills .candidate-skills-item input[type='range'] {
+    -webkit-appearance: none;
+    height: 5px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+/*Right content*/
+
+.wrapper .right-content .candidate-name {
+    width: 100%;
+    height: 350px;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper .right-content .right-content-inner {
+    margin: 0 50px;
+}
+
+.wrapper .right-content .candidate-name .triangle {
+    width: 70px;
+    position: relative;
+    top: -15px;
+    left: -20px;
+}
+
+/*.wrapper .right-content .candidate-name .triangle:hover {*/
+/*    width: 90px;*/
+/*    float: outside;*/
+/*}*/
+
+.wrapper .right-content .candidate-name .right-content-inner h1 {
+    margin: 0;
+    font-size: 70px;
+}
+
+.wrapper .right-content .candidate-name .right-content-inner h1 span{
+    font-family: Montserrat-Bold;
+}
+
+.wrapper .right-content .candidate-name .right-content-inner p {
+    margin: 0;
+    color: #c2c2c2;
+    font-family: Montserrat;
+    font-size: 25px;
+}
+.wrapper .right-content .candidate-description {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 22px 20% 0 10%;
+    box-sizing: border-box;
+    text-align: justify;
+    justify-content: space-between;
+}
+.wrapper .right-content .candidate-description p {
+    color: grey;
+    font-size: 12px;
+    line-height: 25px;
+
+}
+.wrapper .right-content .candidate-description h1 {
+    margin: 0;
+    color: cornflowerblue;
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+.wrapper .right-content .candidate-description hr {
+    color: black;
+    width: 100%;
+}
+
+.wrapper .right-content .candidate-experience {
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 30px 20% 0 10%;
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+.wrapper .right-content .candidate-experience .title {
+    margin: 0;
+    color: cornflowerblue;
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 5px;
+    padding-bottom: 50px;
+    padding-top: 10px;
+}
+
+.wrapper .right-content .candidate-experience .candidate-experience-item {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+.wrapper .right-content .candidate-experience .candidate-experience-item .position {
+    display: flex;
+    justify-content: space-between;
+    color: black;
+}
+.wrapper .right-content .candidate-experience .candidate-experience-item .position h1 {
+    font-size: 14px;
+
+}
+.wrapper .right-content .candidate-experience .candidate-experience-item .position p {
+    color: cornflowerblue;
+    font-size: 12px;
+    margin: 0;
+}
+
+.wrapper .right-content .candidate-experience .candidate-experience-item p {
+    color: grey;
+    font-size: 12px;
+    line-height: 25px;
+}
+.wrapper .right-content .candidate-experience .candidate-experience-item h1 {
+    font-size: 12px;
+    margin: 2px;
+}
+
+.wrapper .right-content .footer {
+    height: 200px;
+    display: flex;
+    width: 100%;
+    padding: 0 20% 0 10%;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: flex-end;
+}
+.wrapper .right-content .footer p{
+    color: black;
+    font-size: 18px;
+    font-family: Montserrat-Bold;
+}
+.wrapper .right-content .footer img {
+    width: 40px;
+    height: 40px;
+    padding-left: 30px;
+}
+
